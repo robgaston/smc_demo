@@ -1,6 +1,8 @@
 import "./styles.css";
 import "mapbox-gl/dist/mapbox-gl.css";
+import "@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css"
 import * as mapboxgl from "mapbox-gl";
+import * as MapboxGeocoder from "@mapbox/mapbox-gl-geocoder";
 import settings from "./settings.json";
 
 const popup = document.querySelector("#popup");
@@ -23,6 +25,18 @@ async function init() {
         feature.id = feature.properties.ID1;
     });
     map.getSource("unified").setData(unified);
+    
+    map.addControl(new MapboxGeocoder({
+        accessToken: mapboxgl.accessToken
+    }));
+    
+    map.addControl(new mapboxgl.GeolocateControl({
+        positionOptions: {
+            enableHighAccuracy: true
+        },
+        trackUserLocation: true
+    }));
+    
 
     initPopup();
     initLegend();

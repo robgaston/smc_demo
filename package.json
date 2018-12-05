@@ -21,6 +21,7 @@
         "process": "cd src && node --experimental-modules process.mjs"
     },
     "dependencies": {
+        "@mapbox/mapbox-gl-geocoder": "^2.3.0",
         "mapbox-gl": "^0.48.0"
     }
 }

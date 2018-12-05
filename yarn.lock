@@ -19,6 +19,16 @@
   resolved "https://registry.yarnpkg.com/@mapbox/jsonlint-lines-primitives/-/jsonlint-lines-primitives-2.0.2.tgz#ce56e539f83552b58d10d672ea4d6fc9adc7b234"
   integrity sha1-zlblOfg1UrWNENZy6k1vya3HsjQ=
 
+"@mapbox/mapbox-gl-geocoder@^2.3.0":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@mapbox/mapbox-gl-geocoder/-/mapbox-gl-geocoder-2.3.0.tgz#d61a1c76acd81a6d4003f96da4741c3f41783d14"
+  integrity sha512-WWM2eDTjly/ELMBVbeDvlVvALYw5V/Fv6/R3thKpt7G8qf3a+f1ZBg8Zd6WyWMgXD+8Fam35xwrqdPKmoMEvbQ==
+  dependencies:
+    lodash.debounce "^4.0.6"
+    mapbox "1.0.0-beta9"
+    suggestions "^1.3.2"
+    xtend "^4.0.1"
+
 "@mapbox/mapbox-gl-supported@^1.4.0":
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@mapbox/mapbox-gl-supported/-/mapbox-gl-supported-1.4.0.tgz#36946b22944fe2cfa43cfafd5ef36fdb54a069e4"
@@ -2685,6 +2695,11 @@ es6-iterator@~2.0.3:
     es5-ext "^0.10.35"
     es6-symbol "^3.1.1"
 
+es6-promise@^4.0.5:
+  version "4.2.5"
+  resolved "https://registry.yarnpkg.com/es6-promise/-/es6-promise-4.2.5.tgz#da6d0d5692efb461e082c14817fe2427d8f5d054"
+  integrity sha512-n6wvpdE43VFtJq+lUDYDBFUwV8TZbuGXLV4D6wKafg13ldznKsyEvatubnmUe31zcvelSzOHF+XbaT+Bl9ObDg==
+
 es6-symbol@^3.1.1, es6-symbol@~3.1.1:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/es6-symbol/-/es6-symbol-3.1.1.tgz#bf00ef4fdab6ba1b46ecb7b629b4c7ed5715cc77"
@@ -3004,6 +3019,11 @@ function-bind@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
   integrity sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==
+
+fuzzy@^0.1.1:
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/fuzzy/-/fuzzy-0.1.3.tgz#4c76ec2ff0ac1a36a9dccf9a00df8623078d4ed8"
+  integrity sha1-THbsL/CsGjap3M+aAN+GIweNTtg=
 
 gauge@~2.7.3:
   version "2.7.4"
@@ -3900,7 +3920,7 @@ lodash.camelcase@^4.3.0:
   resolved "https://registry.yarnpkg.com/lodash.camelcase/-/lodash.camelcase-4.3.0.tgz#b28aa6288a2b9fc651035c7711f65ab6190331a6"
   integrity sha1-soqmKIorn8ZRA1x3EfZathkDMaY=
 
-lodash.debounce@^4.0.8:
+lodash.debounce@^4.0.6, lodash.debounce@^4.0.8:
   version "4.0.8"
   resolved "https://registry.yarnpkg.com/lodash.debounce/-/lodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af"
   integrity sha1-gteb/zCmfEAF/9XiUVMArZyk168=
@@ -4030,6 +4050,14 @@ mapbox-gl@^0.48.0:
     supercluster "^4.1.1"
     tinyqueue "^1.1.0"
     vt-pbf "^3.0.1"
+
+mapbox@1.0.0-beta9:
+  version "1.0.0-beta9"
+  resolved "https://registry.yarnpkg.com/mapbox/-/mapbox-1.0.0-beta9.tgz#580bbacd9990bbe10f2f729ff4031a3b898d27a4"
+  integrity sha1-WAu6zZmQu+EPL3Kf9AMaO4mNJ6Q=
+  dependencies:
+    es6-promise "^4.0.5"
+    rest "^2.0.0"
 
 md5.js@^1.3.4:
   version "1.3.4"
@@ -5230,6 +5258,11 @@ resolve@^1.1.5, resolve@^1.6.0:
   dependencies:
     path-parse "^1.0.5"
 
+rest@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/rest/-/rest-2.0.0.tgz#6dfadf66a405c49cfbd5b4bd25b59fd29cd861bc"
+  integrity sha1-bfrfZqQFxJz71bS9JbWf0pzYYbw=
+
 restore-cursor@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/restore-cursor/-/restore-cursor-2.0.0.tgz#9f7ee287f82fd326d4fd162923d62129eee0dfaf"
@@ -5708,6 +5741,14 @@ style-loader@^0.21.0:
   dependencies:
     loader-utils "^1.1.0"
     schema-utils "^0.4.5"
+
+suggestions@^1.3.2:
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/suggestions/-/suggestions-1.3.3.tgz#932200537d453e24d170730cb85e553d8648d09c"
+  integrity sha512-b5TVbiDvdkUExGVhasglcehIiY1C1MxksWCHCi2Ie8xot08SkvnH3Icb/qnxNMiMr48eI0OPdr53JuB9Ryd04g==
+  dependencies:
+    fuzzy "^0.1.1"
+    xtend "^4.0.0"
 
 supercluster@^4.1.1:
   version "4.1.1"
@@ -6358,7 +6399,7 @@ xregexp@4.0.0:
   resolved "https://registry.yarnpkg.com/xregexp/-/xregexp-4.0.0.tgz#e698189de49dd2a18cc5687b05e17c8e43943020"
   integrity sha512-PHyM+sQouu7xspQQwELlGwwd05mXUFqwFYfqPO0cC7x4fxyHnnuetmQr6CjJiafIDoH4MogHb9dOoJzR/Y4rFg==
 
-xtend@^4.0.0, xtend@~4.0.1:
+xtend@^4.0.0, xtend@^4.0.1, xtend@~4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/xtend/-/xtend-4.0.1.tgz#a5c6d532be656e23db820efb943a1f04998d63af"
   integrity sha1-pcbVMr5lbiPbgg77lDofBJmNY68=
