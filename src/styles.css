@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+main {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.loading {
+    display: none;
+}
+
+#map {
+    height: 100%;
+}
+
+#popup, #legend, header {
+    position: fixed;
+    background-color: rgba(221, 221, 221, 0.9);
+    color: #1f1f1f;
+    border: solid #636363 1px;
+    border-radius: 5px;
+    padding: 15px;
+    z-index: 100;
+    box-shadow: -2px -2px 2px 1px rgba(139, 139, 139, 0.2);
+}
+
+#popup {
+    display: none;
+    top: 10px;
+    right: 10px;
+    max-width: 300px;
+}
+
+#legend {
+    bottom: 30px;
+    right: 10px;
+}
+
+header {
+    top: 10px;
+    left: 10px;
+    margin: 0 370px 0 0;
+}
+
+.title {
+    padding-bottom: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.color {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: solid 1px black;
+}
+
+h4 {
+    margin: 0;
+}
+
+a {
+    color: #1f1f1f;
+}

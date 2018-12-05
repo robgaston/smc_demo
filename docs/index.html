@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>LA historic sites by neighborhood - Rob Gaston</title>
+        <style media="screen">
+            body {
+                background-color:rgb(196, 196, 196);
+            }
+            main {
+                display: none;
+            }
+            .loading {
+                position: fixed;
+                bottom: 50%;
+                right: 50%;
+                width: 64px;
+                height: 64px;
+                margin: 0 -32px -32px 0;
+            }
+            .loading:after {
+                content: " ";
+                display: block;
+                width: 46px;
+                height: 46px;
+                margin: 1px;
+                border-radius: 50%;
+                border: 5px solid #fff;
+                border-color: #fff transparent #fff transparent;
+                animation: loading 1.2s linear infinite;
+            }
+            @keyframes loading {
+                0% {
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <header>
+                <div class="title">
+                    SMC School Districts Demo
+                </div>
+                <div>
+                    <a href="https://www.rgaston.com" target="_blank">Farallon Geographics</a>,
+                    December 2018
+                </div>
+            </header>
+            <div id="map"></div>
+            <div id="popup">
+                <h4 class="district-name"></h4>
+            </div>
+            <div id="legend">
+                <h4>School District Type</h4>
+                <div>
+                    <input type="radio" name="district" value="unified" checked/> Unified
+                </div>
+                <div>
+                    <input type="radio" name="district" value="elementary"/> Elementary
+                </div>
+                <div>
+                    <input type="radio" name="district" value="high-school"/> High School
+                </div>
+            </div>
+        </main>
+
+        <div class="loading"></div>
+
+        <template id="legend-entry">
+            <div class="entry">
+                <span class="color"></span>
+                <span class="value"></span>
+            </div>
+        </template>
+    <script type="text/javascript" src="main.js"></script></body>
+</html>

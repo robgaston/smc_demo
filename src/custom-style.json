@@ -1,0 +1,58 @@
+{
+    "sources": {
+        "unified": {
+            "type": "geojson",
+            "data": {
+                "type": "FeatureCollection",
+                "features": []
+            }
+        }
+    },
+    "layers": [{
+        "id": "unified",
+        "type": "fill",
+        "source": "unified",
+        "layout": {},
+        "paint": {
+            "fill-color": [
+                "interpolate",
+                ["linear"],
+                ["get", "ID1"],
+                1, "#a6cee3",
+                2, "#fb9a99",
+                3, "#b2df8a",
+                4, "#1f78b4",
+                5, "#fdbf6f",
+                6, "#e31a1c",
+                7, "#33a02c",
+                8, "#ff7f00",
+                9, "#cab2d6",
+                10, "#6a3d9a",
+                11, "#ffff99",
+                12, "#8dd3c7",
+                13, "#b3de69",
+                14, "#bebada",
+                15, "#fb8072",
+                16, "#80b1d3",
+                17, "#bc80bd"
+            ],
+            "fill-opacity": 0.5
+        }
+    },{
+        "id": "unified-outline",
+        "type": "line",
+        "source": "unified",
+        "paint": {
+            "line-color": [
+                "case", ["boolean", ["feature-state", "hover"], false],
+                "#383838",
+                "rgb(193, 193, 193)"
+            ],
+            "line-width":  [
+                "case", ["boolean", ["feature-state", "hover"], false],
+                3,
+                1
+            ]
+        }
+    }]
+}

@@ -1,0 +1,9 @@
+{
+    "container": "map",
+    "accessToken": "pk.eyJ1Ijoicmdhc3RvbiIsImEiOiJJYTdoRWNJIn0.MN6DrT07IEKXadCU8xpUMg",
+    "style": "mapbox://styles/rgaston/cixkupqlu00462rpdjjb29lrx",
+    "center": [-122.23937988281251, 37.505368263398104],
+    "zoom": 10,
+    "pitch": 0,
+    "customAttribution": ""
+}

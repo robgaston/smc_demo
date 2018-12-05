@@ -1,0 +1,26 @@
+{
+    "name": "map_demo",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "git@github.com:robgaston/map_demo.git",
+    "author": "Rob Gaston <rgaston@fargeo.com>",
+    "license": "MIT",
+    "private": false,
+    "devDependencies": {
+        "@turf/turf": "^5.1.6",
+        "css-loader": "^1.0.0",
+        "html-webpack-plugin": "^3.2.0",
+        "style-loader": "^0.21.0",
+        "webpack": "^4.16.3",
+        "webpack-cli": "^3.1.0",
+        "webpack-serve": "^2.0.2"
+    },
+    "scripts": {
+        "build": "webpack",
+        "serve": "webpack-serve",
+        "process": "cd src && node --experimental-modules process.mjs"
+    },
+    "dependencies": {
+        "mapbox-gl": "^0.48.0"
+    }
+}
