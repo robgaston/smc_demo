@@ -26,6 +26,8 @@ async function init() {
 
     initPopup();
     initLegend();
+    await import("../data/elementary.json");
+    await import("../data/high-school.json");
 }
 
 function initPopup() {
